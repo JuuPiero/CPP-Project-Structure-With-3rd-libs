@@ -1,9 +1,10 @@
 #include <iostream>
-#include "MyMath.h"
+#include "Application.h"
+#include "Game.h"
 
-int main() {
-    int a = Piero::Sum(1, 2);
-
-    std::cout << a << std::endl;
+int main(int argc, char* argv[]) {
+    Piero::Application a;
+    a.Init();
+    PrintHello();
     return 0;
 }
